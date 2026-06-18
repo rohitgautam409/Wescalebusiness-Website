@@ -97,3 +97,21 @@
     @apply bg-background text-foreground font-body;
   }
 }
+
+/* Marquee Utilities */
+@layer utilities {
+  @keyframes marquee-rtl { 
+    from { transform: translateX(0); } 
+    to { transform: translateX(-100%); } 
+  }
+  .animate-marquee { 
+    animation: marquee-rtl 16s linear infinite; 
+    will-change: transform; 
+  }
+  .marquee-mask:hover .animate-marquee { 
+    animation-play-state: paused; 
+  }
+  @media (prefers-reduced-motion: reduce) { 
+    .animate-marquee { animation: none; } 
+  }
+}
