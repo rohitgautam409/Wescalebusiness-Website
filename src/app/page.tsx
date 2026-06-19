@@ -1,7 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { DashboardShowcase } from "@/components/DashboardShowcase";
-import { Features } from "@/components/Features";
+import { FeatureV2 } from "@/components/FeatureV2";
+import { Testimonials } from "@/components/Testimonials";
+import { FAQ } from "@/components/FAQ";
+import { AdCreatives } from "@/components/AdCreatives";
 
 export default function Home() {
   return (
@@ -9,7 +12,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <DashboardShowcase />
-      <Features />
+      <FeatureV2 />
+      <FAQ />
+      <AdCreatives />
+      <Testimonials />
     </main>
   );
 }

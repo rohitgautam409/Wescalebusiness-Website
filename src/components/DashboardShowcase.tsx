@@ -83,7 +83,7 @@ export function DashboardShowcase() {
       {/* Heading */}
       <div className="relative z-10 w-full mx-auto px-6 text-center mb-[64px] flex flex-col items-center gap-4">
         <h2
-          className="font-display font-[600] tracking-tight bg-gradient-to-r from-[#c084fc] to-[#e879f9] bg-clip-text text-transparent whitespace-nowrap"
+          className="font-display font-[600] tracking-tight bg-gradient-to-r from-black to-[#e879f9] bg-clip-text text-transparent whitespace-nowrap"
           style={{ fontSize: 'clamp(20px, 3.5vw, 40px)', lineHeight: 1.04 }}
         >
           Dashboards & websites we've shipped for clients.
