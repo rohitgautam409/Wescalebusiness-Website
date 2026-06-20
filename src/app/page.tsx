@@ -5,6 +5,7 @@ import { FeatureV2 } from "@/components/FeatureV2";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { AdCreatives } from "@/components/AdCreatives";
+import { CTAAndFooter } from "@/components/CTAAndFooter";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FAQ />
       <AdCreatives />
       <Testimonials />
+      <CTAAndFooter />
     </main>
   );
 }
