@@ -30,11 +30,9 @@ export function Navbar() {
       <div className="w-full max-w-[1800px] mx-auto px-6 lg:px-12">
         <nav className="relative flex items-center justify-between h-[72px] md:h-[84px]">
           {/* Left: Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#c084fc] to-[#e879f9] flex items-center justify-center shadow-[0_0_15px_rgba(192,132,252,0.3)] group-hover:shadow-[0_0_20px_rgba(192,132,252,0.5)] transition-shadow">
-              <span className="text-obsidian font-display font-bold text-lg leading-none">W</span>
-            </div>
-            <div className="font-display font-[800] text-xl tracking-tight flex items-center">
+          <Link href="/" className="flex items-center gap-3 group">
+            <img src="/Company-Logo.png" alt="WeScaleBusiness Logo" className="w-12 h-12 object-contain" />
+            <div className="font-display font-[800] text-xl md:text-2xl tracking-tight flex items-center">
               <span className="text-bone">WeScale</span>
               <span className="text-[#e879f9]">Business</span>
             </div>

@@ -127,10 +127,8 @@ export function CTAAndFooter() {
         <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-8 md:gap-0 w-full">
 
           {/* Brand */}
-          <div className="flex items-center justify-center md:justify-start gap-3 w-full">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#c084fc] to-[#e879f9] flex items-center justify-center shadow-[0_0_15px_rgba(192,132,252,0.3)]">
-              <span className="text-black font-display font-bold text-xl leading-none">W</span>
-            </div>
+          <div className="flex items-center justify-center md:justify-start gap-4 w-full">
+            <img src="/Company-Logo.png" alt="WeScaleBusiness Logo" className="w-14 h-14 object-contain rounded-full bg-black" />
             <span className="font-display font-bold text-xl md:text-2xl text-[#e879f9] tracking-tight">WeScaleBusiness</span>
           </div>
 

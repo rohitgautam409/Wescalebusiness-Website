@@ -23,8 +23,8 @@ const fontBody = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WeScaleBusiness - AI Growth System",
-  description: "Turn cold leads into booked appointments with our AI growth system.",
+  title: "WeScaleBusiness | AI Solutions",
+  description: "AI Solutions for Forward Thinking Businesses",
 };
 
 export default function RootLayout({
