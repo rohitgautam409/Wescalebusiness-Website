@@ -51,8 +51,20 @@ export function AdCreatives() {
 
   return (
     <section data-surface="dark" className="relative w-full bg-[#0a0a0a] py-[120px] overflow-hidden">
-      {/* Subtle Purple Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#e879f9]/10 blur-[120px] rounded-[100%] pointer-events-none z-0" />
+      {/* Background Layout Image */}
+      <div 
+        className="absolute top-0 left-0 right-0 h-[600px] md:h-auto w-full z-0 pointer-events-none flex justify-center overflow-hidden"
+        style={{
+          maskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 50%, transparent 100%)"
+        }}
+      >
+        <img
+          src="/AdsCreative-Layout.png"
+          alt="Ad Creatives Background Glow"
+          className="w-full h-full md:h-auto object-cover md:object-contain object-top opacity-80 max-w-[1440px] mix-blend-screen"
+        />
+      </div>
 
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
         

@@ -17,24 +17,24 @@ const InstagramIcon = (props: any) => (
   </svg>
 );
 
-const TwitterIcon = (props: any) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-);
-
-const FacebookIcon = (props: any) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-  </svg>
-);
-
 export function CTAAndFooter() {
   return (
     <section className="w-full bg-[#0a0a0a] relative overflow-hidden flex flex-col items-center pt-[60px] pb-[40px] z-20">
 
-      {/* Background Ambient Glow */}
-      <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#c084fc]/10 blur-[150px] rounded-full pointer-events-none" />
+      {/* Background Layout Image */}
+      <div
+        className="absolute  lg:top-5 top-40 left-0 right-0 h-[500px] md:h-auto w-full md:top-60 z-0 pointer-events-none flex justify-center overflow-hidden"
+        style={{
+          maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)"
+        }}
+      >
+        <img
+          src="/Footer-layout.png"
+          alt="Footer Background Glow"
+          className="w-full h-full md:h-auto object-cover md:object-contain object-top opacity-90 max-w-[1440px] mix-blend-screen"
+        />
+      </div>
 
       {/* Part 1: CTA Section */}
       <div className="flex flex-col items-center text-center px-6 relative z-10 w-full">
@@ -78,20 +78,20 @@ export function CTAAndFooter() {
           className="flex flex-col sm:flex-row items-center gap-4 md:gap-6"
         >
           {/* Primary Button */}
-          <button className="flex items-center justify-center gap-3 bg-white text-black px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 group shadow-[0_0_0_rgba(192,132,252,0)] hover:shadow-[0_15px_30px_rgba(192,132,252,0.3)]">
+          <button className="flex items-center justify-center gap-3 bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-sm md:text-base hover:bg-gray-100 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 group shadow-[0_0_0_rgba(192,132,252,0)] hover:shadow-[0_15px_30px_rgba(192,132,252,0.3)]">
             Book A Strategy Call
             <ArrowRight className="w-5 h-5 text-[#c084fc] group-hover:translate-x-1 transition-transform" />
           </button>
 
           {/* Secondary Button */}
-          <button className="flex items-center justify-center bg-white/[0.05] border border-white/10 text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg hover:border-[#c084fc]/50 hover:bg-white/[0.08] hover:shadow-[0_0_20px_rgba(192,132,252,0.2)] transition-all duration-300">
+          <button className="flex items-center justify-center bg-white/[0.05] border border-white/10 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-sm md:text-base hover:border-[#c084fc]/50 hover:bg-white/[0.08] hover:shadow-[0_0_20px_rgba(192,132,252,0.2)] transition-all duration-300">
             Contact Us
           </button>
         </motion.div>
       </div>
 
       {/* Part 2: Large Brand Wordmark */}
-      <div className="relative w-full mt-10 md:mt-20 flex justify-center overflow-hidden pointer-events-none select-none z-0">
+      <div className="relative w-full mt-48 md:mt-[350px] flex justify-center overflow-hidden pointer-events-none select-none z-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -128,7 +128,7 @@ export function CTAAndFooter() {
 
           {/* Brand */}
           <div className="flex items-center justify-center md:justify-start gap-3 w-full">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-[#c084fc] to-[#e879f9] flex items-center justify-center shadow-[0_0_15px_rgba(192,132,252,0.3)]">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#c084fc] to-[#e879f9] flex items-center justify-center shadow-[0_0_15px_rgba(192,132,252,0.3)]">
               <span className="text-black font-display font-bold text-xl leading-none">W</span>
             </div>
             <span className="font-display font-bold text-xl md:text-2xl text-[#e879f9] tracking-tight">WeScaleBusiness</span>
@@ -137,12 +137,10 @@ export function CTAAndFooter() {
           {/* Socials */}
           <div className="flex items-center justify-center gap-4 w-full">
             {[
-              { icon: LinkedinIcon, href: "#" },
-              { icon: InstagramIcon, href: "#" },
-              { icon: TwitterIcon, href: "#" },
-              { icon: FacebookIcon, href: "#" },
+              { icon: LinkedinIcon, href: "https://www.linkedin.com/company/we-scale-business/" },
+              { icon: InstagramIcon, href: "https://www.instagram.com/wescalebusiness_/" },
             ].map((social, i) => (
-              <Link key={i} href={social.href} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#c084fc]/20 hover:border-[#c084fc]/50 hover:text-[#e879f9] hover:scale-105 hover:shadow-[0_0_15px_rgba(192,132,252,0.3)] transition-all duration-300">
+              <Link key={i} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#c084fc]/20 hover:border-[#c084fc]/50 hover:text-[#e879f9] hover:scale-105 hover:shadow-[0_0_15px_rgba(192,132,252,0.3)] transition-all duration-300">
                 <social.icon className="w-4 h-4" />
               </Link>
             ))}
@@ -161,7 +159,7 @@ export function CTAAndFooter() {
         {/* Middle Section: Image 2 Layout */}
         <div className="flex flex-row items-center justify-between w-full">
 
-          <Link href="#privacy-policy" className="flex items-center gap-2 md:gap-3 lg:gap-4 group">
+          <Link href="/privacy-policy" className="flex items-center gap-2 md:gap-3 lg:gap-4 group">
             <div className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 rounded-full bg-black flex items-center justify-center border border-white/10 group-hover:border-[#c084fc]/50 group-hover:bg-[#c084fc]/10 transition-colors">
               <ArrowUpRight className="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5 text-white" />
             </div>
