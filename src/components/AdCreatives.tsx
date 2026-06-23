@@ -50,7 +50,7 @@ export function AdCreatives() {
 
 
   return (
-    <section data-surface="dark" className="relative w-full bg-[#0a0a0a] py-[120px] overflow-hidden">
+    <section id="creatives" data-surface="dark" className="relative w-full bg-[#0a0a0a] py-[120px] overflow-hidden">
       {/* Background Layout Image */}
       <div 
         className="absolute top-0 left-0 right-0 h-[600px] md:h-auto w-full z-0 pointer-events-none flex justify-center overflow-hidden"

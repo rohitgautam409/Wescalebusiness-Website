@@ -121,7 +121,7 @@ export function Testimonials() {
   };
 
   return (
-    <section data-surface="light" className="w-full bg-white pt-[60px] pb-[20px] relative overflow-hidden">
+    <section id="testimonials" data-surface="light" className="w-full bg-white pt-[60px] pb-[20px] relative overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6">
         
         {/* Section Header */}

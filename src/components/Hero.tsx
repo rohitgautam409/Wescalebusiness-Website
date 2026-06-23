@@ -109,47 +109,61 @@ export function Hero() {
 
           {/* CTA */}
           <motion.div variants={itemVariants} className="pt-3">
-            <Button
-              className="rounded-full bg-bone hover:bg-white text-obsidian font-semibold h-[56px] lg:h-[46px] pl-6 lg:pl-5 pr-[6px] lg:pr-[5px] gap-3 lg:gap-3 border border-white/20 shadow-[0_0_40px_rgba(255,255,255,0.08)] group transition-all"
+            <motion.button
+              whileHover={{ scale: 1.05, y: -4 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center justify-center rounded-full bg-bone hover:bg-white text-obsidian font-bold h-[64px] lg:h-[60px] pl-8 pr-[10px] gap-4 border border-white/20 shadow-[0_0_40px_rgba(255,255,255,0.08)] group transition-colors duration-300"
             >
-              <span className="text-[16px] lg:text-[14px] tracking-wide">Try it now</span>
-              <span className="w-10 h-10 lg:w-8 lg:h-8 rounded-full bg-[#a855f7] flex items-center justify-center group-hover:bg-[#9333ea] transition-colors shadow-[0_0_15px_rgba(168,85,247,0.4)]">
-                <ArrowRight className="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2.5px]" />
+              <span className="text-[18px] lg:text-[18px] tracking-wide group-hover:text-[#9333ea] transition-colors duration-300">Try it now</span>
+              <span className="w-12 h-12 lg:w-11 lg:h-11 rounded-full bg-[#a855f7] flex items-center justify-center group-hover:bg-[#9333ea] transition-colors shadow-[0_0_15px_rgba(168,85,247,0.4)]">
+                <ArrowRight className="w-6 h-6 lg:w-5 lg:h-5 text-white stroke-[2.5px]" />
               </span>
-            </Button>
+            </motion.button>
           </motion.div>
         </motion.div>
 
         {/* Floating Badges (Responsive) */}
         <div className="flex flex-col lg:absolute lg:left-[60%] xl:left-[55%] lg:top-0 lg:w-[450px] lg:h-[300px] pointer-events-none z-20 mt-10 lg:mt-0 gap-3 lg:gap-0 w-full items-center lg:items-start lg:block">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            className="relative lg:absolute lg:top-[10%] lg:left-0 flex items-center gap-3 rounded-full px-4 py-2 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            initial={{ opacity: 0, x: -20, y: 0 }}
+            animate={{ opacity: 1, x: 0, y: [0, -6, 0] }}
+            transition={{
+              opacity: { delay: 0.8, duration: 0.6 },
+              x: { delay: 0.8, duration: 0.6 },
+              y: { repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 1.4 }
+            }}
+            className="relative lg:absolute lg:top-[10%] lg:left-0 flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#e879f9]" />
-            <span className="text-[13px] font-medium text-bone/90 tracking-wide">Your smart scheduling assistant</span>
+            <Sparkles className="w-5 h-5 text-[#e879f9]" />
+            <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Your smart scheduling assistant</span>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.0, duration: 0.6 }}
-            className="relative lg:absolute lg:top-[35%] lg:left-[15%] flex items-center gap-3 rounded-full px-4 py-2 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            initial={{ opacity: 0, x: -20, y: 0 }}
+            animate={{ opacity: 1, x: 0, y: [0, -6, 0] }}
+            transition={{
+              opacity: { delay: 1.0, duration: 0.6 },
+              x: { delay: 1.0, duration: 0.6 },
+              y: { repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1.6 }
+            }}
+            className="relative lg:absolute lg:top-[35%] lg:left-[15%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
-            <Check className="w-3.5 h-3.5 text-[#c084fc] stroke-[3]" />
-            <span className="text-[13px] font-medium text-bone/90 tracking-wide">Qualified appointment only</span>
+            <Check className="w-5 h-5 text-[#e879f9] stroke-[3]" />
+            <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Qualified appointment only</span>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
-            className="relative lg:absolute lg:top-[60%] lg:left-[-5%] flex items-center gap-3 rounded-full px-4 py-2 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            initial={{ opacity: 0, x: -20, y: 0 }}
+            animate={{ opacity: 1, x: 0, y: [0, -6, 0] }}
+            transition={{
+              opacity: { delay: 1.2, duration: 0.6 },
+              x: { delay: 1.2, duration: 0.6 },
+              y: { repeat: Infinity, duration: 3.8, ease: "easeInOut", delay: 1.8 }
+            }}
+            className="relative lg:absolute lg:top-[60%] lg:left-[-5%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
-            <Rocket className="w-3.5 h-3.5 text-[#a855f7]" />
-            <span className="text-[13px] font-medium text-bone/90 tracking-wide">Increases efficiency by 80%</span>
+            <Rocket className="w-5 h-5 text-[#e879f9]" />
+            <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Increases efficiency by 80%</span>
           </motion.div>
         </div>
       </div>

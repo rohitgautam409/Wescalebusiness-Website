@@ -43,7 +43,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section data-surface="light" className="w-full bg-white pt-[60px] pb-[60px]">
+    <section id="faq" data-surface="light" className="w-full bg-white pt-[60px] pb-[60px]">
       <div className="max-w-[1200px] mx-auto px-6">
         
         {/* Section Header */}

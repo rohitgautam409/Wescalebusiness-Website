@@ -61,7 +61,7 @@ export function DashboardShowcase() {
   );
 
   return (
-    <section data-surface="light" className="bg-white relative w-full overflow-hidden py-[96px]">
+    <section id="dashboard" data-surface="light" className="bg-white relative w-full overflow-hidden py-[96px]">
       {/* Left Gradient Frosted Edge (Full Section Height) */}
       <div
         className="pointer-events-none absolute left-0 top-0 bottom-0 z-20 h-full w-[80px] md:w-[140px] bg-white"

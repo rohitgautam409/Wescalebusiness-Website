@@ -182,7 +182,7 @@ export function FeatureV2() {
   });
 
   return (
-    <section ref={containerRef} data-surface="dark" className="relative w-full bg-[#0a0a0a] text-white">
+    <section id="features" ref={containerRef} data-surface="dark" className="relative w-full bg-[#0a0a0a] text-white">
       {/* Background Texture Overlay */}
       <div 
         className="absolute inset-0 pointer-events-none z-0 mix-blend-screen opacity-[0.4]"
