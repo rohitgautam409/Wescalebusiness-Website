@@ -52,12 +52,12 @@ export function CTAAndFooter() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display font-[800] text-4xl md:text-5xl lg:text-[72px] tracking-tight mb-8 flex flex-col items-center gap-2 leading-[0.95]"
+          className="font-display font-[600] text-4xl md:text-5xl lg:text-[72px] tracking-tight mb-8 flex flex-col items-center gap-1 leading-[0.95]"
         >
-          <span className="text-white">Ready To Scale</span>
-          <span className="bg-gradient-to-r from-[#c084fc] to-[#e879f9] text-transparent bg-clip-text pb-4">
+          <div className="text-bone">Ready To Scale</div>
+          <div className="bg-gradient-to-br from-[#f8fafc] to-[#d8b4fe] text-transparent bg-clip-text pb-4">
             With AI?
-          </span>
+          </div>
         </motion.h2>
 
         <motion.p

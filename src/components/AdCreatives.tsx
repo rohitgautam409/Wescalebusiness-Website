@@ -84,9 +84,12 @@ export function AdCreatives() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-display font-[600] text-4xl md:text-5xl lg:text-6xl text-white tracking-tight mb-6"
+            className="font-display font-[600] text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6 flex flex-col items-center gap-1"
           >
-            Ads That Stop The Scroll
+            <div className="text-bone">Ads That Stop</div>
+            <div className="bg-gradient-to-br from-[#f8fafc] to-[#d8b4fe] text-transparent bg-clip-text pb-1">
+              The Scroll.
+            </div>
           </motion.h2>
           
           <motion.p 

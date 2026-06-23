@@ -80,14 +80,39 @@ export function DashboardShowcase() {
         }}
       />
 
-      {/* Heading */}
-      <div className="relative z-10 w-full mx-auto px-6 text-center mb-[64px] flex flex-col items-center gap-4">
-        <h2
-          className="font-display font-[600] tracking-tight bg-gradient-to-r from-black to-[#e879f9] bg-clip-text text-transparent whitespace-nowrap"
-          style={{ fontSize: 'clamp(20px, 3.5vw, 40px)', lineHeight: 1.04 }}
+      {/* Section Header */}
+      <div className="relative z-10 flex flex-col items-center text-center mb-12 px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center rounded-full border border-[#c084fc]/20 bg-[#c084fc]/10 px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#a855f7] mb-4"
         >
-          Dashboards & websites we've shipped for clients.
-        </h2>
+          Our Portfolio
+        </motion.div>
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="font-display font-[600] text-3xl md:text-4xl lg:text-5xl tracking-tight mb-4 flex flex-col items-center gap-1 md:gap-2"
+        >
+          <span className="text-gray-900">Dashboards & Websites</span>
+          <span className="bg-gradient-to-r from-[#c084fc] to-[#e879f9] text-transparent bg-clip-text pb-2">
+            We've Shipped
+          </span>
+        </motion.h2>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-gray-500 text-sm md:text-base max-w-[600px] leading-relaxed"
+        >
+          Explore the custom interfaces and conversion-optimized web applications we've built for our clients.
+        </motion.p>
       </div>
 
       {/* Marquee Area */}

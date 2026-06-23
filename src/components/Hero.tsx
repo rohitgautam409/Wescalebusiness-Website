@@ -68,7 +68,6 @@ export function Hero() {
             muted
             loop
             playsInline
-            poster="/hero-fallback.jpg"
             aria-hidden="true"
           >
             <source src="/hero-bg-nebula.mp4" type="video/mp4" />
@@ -132,7 +131,7 @@ export function Hero() {
               x: { delay: 0.8, duration: 0.6 },
               y: { repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 1.4 }
             }}
-            className="relative lg:absolute lg:top-[10%] lg:left-0 flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            className="relative lg:absolute lg:top-[5%] lg:left-[-30%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
             <Sparkles className="w-5 h-5 text-[#e879f9]" />
             <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Your smart scheduling assistant</span>
@@ -146,7 +145,7 @@ export function Hero() {
               x: { delay: 1.0, duration: 0.6 },
               y: { repeat: Infinity, duration: 4.2, ease: "easeInOut", delay: 1.6 }
             }}
-            className="relative lg:absolute lg:top-[35%] lg:left-[15%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            className="relative lg:absolute lg:top-[35%] lg:left-[25%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
             <Check className="w-5 h-5 text-[#e879f9] stroke-[3]" />
             <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Qualified appointment only</span>
@@ -160,7 +159,7 @@ export function Hero() {
               x: { delay: 1.2, duration: 0.6 },
               y: { repeat: Infinity, duration: 3.8, ease: "easeInOut", delay: 1.8 }
             }}
-            className="relative lg:absolute lg:top-[60%] lg:left-[-5%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+            className="relative lg:absolute lg:top-[70%] lg:left-[-5%] flex items-center gap-4 rounded-full px-6 py-3 border border-white/10 bg-[#14131b]/60 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
           >
             <Rocket className="w-5 h-5 text-[#e879f9]" />
             <span className="text-[15px] font-medium text-[#DDBBF1] tracking-wide">Increases efficiency by 80%</span>
